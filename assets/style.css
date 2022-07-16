@@ -1,0 +1,50 @@
+:root {
+    --dark: black;
+    --light: grey;
+    --color: rgb(163, 200, 200);
+}
+
+* {
+    margin: 0;
+}
+
+header {
+    display: inline-flex;
+    width: 100vw;
+    padding: 20px;
+    justify-content: center;
+    background-color: var(--color);
+}
+
+main {
+    display: inline-flex;
+    width: 95vw;
+    margin: 5px;
+}
+
+body {
+    overflow: hidden;
+}
+
+.side-bar {
+    height: 100vh;
+    width: 20%;
+    padding: 10px 20px 10px 10px;
+    border-right: 1px solid black;
+}
+
+.main-content {
+    width: 80%;
+    padding: 10px;
+    flex-direction: column;
+}
+
+button,input {
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+
+hr {
+    margin: 10px 0px 10px 10px;
+}
