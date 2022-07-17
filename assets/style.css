@@ -43,6 +43,10 @@ body {
     flex-direction: column;
 }
 
+.row-2 {
+    margin-top: 20px;
+}
+
 .weather-card {
     display: inline-flex;
     flex-direction: column;

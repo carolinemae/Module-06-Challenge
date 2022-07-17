@@ -38,7 +38,7 @@ function getApi() {
             console.log(data)
 
             var uvIndex = document.createElement("mark");
-            uvIndex.innerHTML = data.daily[0].uvi;
+            uvIndex.innerHTML = '<b>' + data.daily[0].uvi + '</b>';
             weatherInfo.append(uvIndex);
 
             if (data.daily[0].uvi > 2) {
@@ -47,7 +47,7 @@ function getApi() {
                 uvIndex.setAttribute('style','background-color: green');
             }
 
-            rowDiv2.innerHTML = '<h2>5-Day Forecast:</h2>';
+            rowDiv2.innerHTML = '<hr><h2>5-Day Forecast:</h2>';
 
             function forecastDay1() {
                 var unix1 = data.daily[1].dt;
