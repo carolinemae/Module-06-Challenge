@@ -1,11 +1,14 @@
 :root {
     --dark: black;
-    --light: grey;
+    --white: white;
     --color: rgb(163, 200, 200);
+    --colord: rgb(139, 176, 176);
+    --colorxd:rgb(67, 100, 100);
 }
 
 * {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -13,7 +16,8 @@ header {
     width: 100vw;
     padding: 20px;
     justify-content: center;
-    background-color: var(--color);
+    /* background-color: var(--color); */
+    background-image: linear-gradient(to right, var(--color) , var(--colorxd));
 }
 
 main {
@@ -35,11 +39,21 @@ body {
 
 .main-content {
     width: 80%;
-    padding: 10px;
+    padding: 10px 10px 10px 30px;
     flex-direction: column;
 }
 
-button,input {
+.weather-card {
+    display: inline-flex;
+    flex-direction: column;
+    width: 150px;
+    margin: 10px;
+    padding: 5px;
+    background-color: var(--color);
+}
+
+button,
+input {
     width: 100%;
     margin: 5px;
     padding: 5px;
@@ -47,4 +61,37 @@ button,input {
 
 hr {
     margin: 10px 0px 10px 10px;
+}
+
+#search-button {
+    background-color: var(--color);
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+}
+
+#search-button:hover {
+    background-color: var(--colord);
+}
+
+#history-button {
+    background-color: var(--white);
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+}
+
+#searched-city {
+    line-height: 200%;
+}
+
+p {
+    line-height: 200%;
+}
+
+hr {
+    border-top: 1px solid black;
+}
+
+mark {
+    padding: 2px 10px 2px 10px;
+    border-radius: 5px;
 }
