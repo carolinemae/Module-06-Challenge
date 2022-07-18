@@ -124,7 +124,7 @@ function init() {
     var storedSearch = JSON.parse(localStorage.getItem('history'));
 
     if (storedSearch !== null) {
-        searchList = storedSearch;
+        searchHistory = storedSearch;
     }
 
     renderHistory();
