@@ -41,8 +41,10 @@ function getApi() {
             uvIndex.innerHTML = '<b>' + data.daily[0].uvi + '</b>';
             weatherInfo.append(uvIndex);
 
-            if (data.daily[0].uvi > 2) {
+            if (data.daily[0].uvi > 5) {
                 uvIndex.setAttribute('style','background-color: red');
+            } else if (data.daily[0].uvi >= 2) {
+                uvIndex.setAttribute('style','background-color: yellow');
             } else {
                 uvIndex.setAttribute('style','background-color: green');
             }
